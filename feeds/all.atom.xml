@@ -1,0 +1,160 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom"><title>ioadeer</title><link href="https://ioadeer.github.io/blog/" rel="alternate"></link><link href="https://ioadeer.github.io/blog/feeds/all.atom.xml" rel="self"></link><id>https://ioadeer.github.io/blog/</id><updated>2020-02-28T10:00:00-03:00</updated><entry><title>What is Corpus Based Concatenative Synthesis?</title><link href="https://ioadeer.github.io/blog/concatenative-synthesis.html" rel="alternate"></link><published>2020-02-28T10:00:00-03:00</published><updated>2020-02-28T10:00:00-03:00</updated><author><name>Joaquin Cervino</name></author><id>tag:ioadeer.github.io,2020-02-28:/blog/concatenative-synthesis.html</id><summary type="html">&lt;p&gt;&lt;span class="videobox"&gt;
+                &lt;iframe
+                    src="//player.vimeo.com/video/400739487?title=0&amp;amp;byline=0&amp;amp;portrait=0"
+                    width="640" height="390" frameborder="0"
+                    webkitAllowFullScreen mozallowfullscreen allowFullScreen&gt;
+                &lt;/iframe&gt;
+            &lt;/span&gt;&lt;/p&gt;
+&lt;h1&gt;Introduction&lt;/h1&gt;
+&lt;h2&gt;History of granular synthesis&lt;/h2&gt;
+&lt;p&gt;Granular synthesis is a sound synthesis technique derived from what was
+originally suggested by Iannis Xenakis as a compositional method on his book
+&lt;em&gt;Musiques Formelles&lt;/em&gt; (1981). Due to its inherent complexity, it was
+successfully implemented for the first time on software by Curtis Roads on …&lt;/p&gt;</summary><content type="html">&lt;p&gt;&lt;span class="videobox"&gt;
+                &lt;iframe
+                    src="//player.vimeo.com/video/400739487?title=0&amp;amp;byline=0&amp;amp;portrait=0"
+                    width="640" height="390" frameborder="0"
+                    webkitAllowFullScreen mozallowfullscreen allowFullScreen&gt;
+                &lt;/iframe&gt;
+            &lt;/span&gt;&lt;/p&gt;
+&lt;h1&gt;Introduction&lt;/h1&gt;
+&lt;h2&gt;History of granular synthesis&lt;/h2&gt;
+&lt;p&gt;Granular synthesis is a sound synthesis technique derived from what was
+originally suggested by Iannis Xenakis as a compositional method on his book
+&lt;em&gt;Musiques Formelles&lt;/em&gt; (1981). Due to its inherent complexity, it was
+successfully implemented for the first time on software by Curtis Roads on 1991
+and by Barry Truax on 1988. Later on, Curtis Roads would give a conceptual
+framework to this technique, rooted on science, going as back as Gabor's
+experiments with sound quanta on his book Microsound (2004). As well as
+explaining the basis of this method of sound design, the author gathers an
+exhaustive compendium of all software implementations using granular synthesis.
+Though today this catalog may seem dated, this book is a corner stone on this
+particular subject and the reader will probably find it inspirational as well
+as informative.&lt;/p&gt;
+&lt;p&gt;As its name suggests, granular synthesis consists on the usage of many
+"grains" of sounds. Grains may vary a lot on the waveform they carry, but
+they have a short duration and generally an envelope is applied on their
+amplitude. The occurance of each &lt;em&gt;microsound&lt;/em&gt; can be regarded as an event, and
+the addition of many of these events can produce an overall effect which is
+metaphorically tied to a &lt;em&gt;cloud&lt;/em&gt;, as named by Curtis Roads. This comparasion is
+very useful as it binds emergent characteristics of this group of events, such
+as density, with a natural phenomenon widely known.  Methods have been proposed
+to control the overall behavior of this clouds, being the statistical approach
+the first one and most &lt;em&gt;classical&lt;/em&gt; (it's usage can be traced back to Xenakis'
+piece &lt;em&gt;Metastasis&lt;/em&gt; and it is the main topic of &lt;em&gt;Musiques Formelles&lt;/em&gt;). Other
+implementations can be described as algorithmic or processual, such as Eduardo
+Reck Miranda's &lt;em&gt;ChaosSynth&lt;/em&gt;, a synth which employs a cellular automaton as a
+means of sequencing the density and pitch of grains. 
+With the advent of information technologies applied to extracting meaningful
+information from sound a new dimension for grain sequencing is conceived.&lt;/p&gt;
+&lt;h2&gt;History and taxonomy of Corpus Based Concatenative Synthesis&lt;/h2&gt;
+&lt;p&gt;Diemo
+&lt;a href="https://hal.archives-ouvertes.fr/hal-01161401/"&gt;Schwarz(2006)&lt;/a&gt;[@schwarz2006concatenative]
+traces an historical account of this kind of synthesis, from early usages to
+modern day implementations, as he proposes a taxonomy for the "approaches to
+musical sound synthesis that are somehow data-driven and concatenative". &lt;/p&gt;
+&lt;p&gt;He points out the processes of selection and manipulation with the advent of
+&lt;em&gt;musique concrete&lt;/em&gt; and early electronic music as the first experimentations
+which can be bound to this kind of synthesis.  Pierre Schaeffer's &lt;em&gt;Groupe de
+Recherche Musical (GRM)&lt;/em&gt; handcrafted edition, selection and manipulation of
+tapes along with the concept of &lt;em&gt;sound object&lt;/em&gt; can be seen as pioneering
+landmarks. Other pieces of composers such as Xenakis' &lt;em&gt;Analogique A et
+B&lt;/em&gt;(1958/59), Cage's &lt;em&gt;William Mix&lt;/em&gt;(1953), Stockhausen's &lt;em&gt;Etude&lt;/em&gt;(1952) and John
+Oswald's &lt;em&gt;Plunderphonics&lt;/em&gt; would also correspond to the group named "Manual
+Approach".&lt;/p&gt;
+&lt;p&gt;The author sorts different approaches for the implementations of concatenative
+synthesis according to the strategies used regarding sound analysis and
+selection. He establishes the following taxonomy:&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;Manual approach&lt;/li&gt;
+&lt;li&gt;Fixed mapping&lt;/li&gt;
+&lt;li&gt;Spectral frame similarity&lt;/li&gt;
+&lt;li&gt;Segmental similarity&lt;/li&gt;
+&lt;li&gt;Descriptor analysis with direct selection in real time&lt;/li&gt;
+&lt;li&gt;High-level descriptors for targeted stochastic selection&lt;/li&gt;
+&lt;li&gt;Descriptor analysis with fully automatic high-level unit selection &lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;I will not go into further detail as to what any other group stands for, but
+note that they target more modern usages.&lt;/p&gt;
+&lt;p&gt;On a different publication,
+&lt;a href="https://hal.archives-ouvertes.fr/hal-01161401/"&gt;Schwarz(2008)&lt;/a&gt; proposes
+another taxonomy, this time aiming to describe "new musical ideas to be
+experimented by the novel concepts [concatenative synthesis] proposes". These are:&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;Re-arranging&lt;/li&gt;
+&lt;li&gt;Interaction with self-recorded sound&lt;/li&gt;
+&lt;li&gt;Composition by navigation&lt;/li&gt;
+&lt;li&gt;Cross-selection and interpolation&lt;/li&gt;
+&lt;li&gt;Corpus based selection&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;Again, I will not explain the meaning of each category, but the implementation
+I developed would be part of the Re-arranging group, where "units from the
+corpus are re-arranged by other rules than the temporal order of their original
+recordings".&lt;/p&gt;
+&lt;h1&gt;Implementation of corpus based concatenative synthesis&lt;/h1&gt;
+&lt;h2&gt;Sound analysis&lt;/h2&gt;
+&lt;p&gt;Audio analysis tools are capable of retrieving a great amount of data from
+audio files.  This kind of information retrieval techniques is a subset of a
+much larger, much complex field of study known as music information retrieval
+(MIR). In order to depict sound, lots of different aspects are numerically
+measured.  These aspects are called &lt;em&gt;features&lt;/em&gt; and they can describe sound in
+different levels. Those features which are more closely related to signal
+processing and that can be represented by numerical values are called low level
+features. They commonly refer to spectral analysis, MFCC bands analysis, etc.
+They are obtained through the analyisis of a given number of samples, called
+analysis windows, whose size is a power of two (2048, 4096) due to
+computational efficiency. High level features describe sound in a more
+semantical manner. They are related to musical aspects such as genre and
+mood. High level features emerge from processing low level features. &lt;/p&gt;
+&lt;p&gt;Due to the short time span of grains, low level features seem as the obvious
+choice for the processing stage of data driven granular synthesis.&lt;/p&gt;
+&lt;h2&gt;Towards an implementation&lt;/h2&gt;
+&lt;p&gt;There are existing implementations of this technique on popular audio
+programming platforms, such as Pure Data, MaxMSP and SuperCollider. One of the
+key concepts of this kind of synthesis technique is the close relation it bears 
+between information technologies and sound design.&lt;/p&gt;
+&lt;p&gt;The present work proposes an implementation using Python, which is a
+programming language that has a lot of powerful libraries developed to perform
+feature extraction, data analysis, data visualisation, machine learning. As a
+high level programming language it is not the best choice for real time audio
+manipulation. Nevertheless, it can be used to perform some basic audio tasks such
+as writing to an audio buffer with a callback function.&lt;/p&gt;
+&lt;h2&gt;Audio analysis tools&lt;/h2&gt;
+&lt;p&gt;The first step to implement a data-driven sound design technique is to create a
+data base of audio analysis information. There is a wide variety of audio
+analysis tools, for example &lt;a href="http://librosa.github.io/"&gt;librosa&lt;/a&gt;, which is a
+library for audio and music processing on Python.
+&lt;a href="https://essentia.upf.edu/"&gt;Essentia&lt;/a&gt;, an open-source C++ library with Python
+bindings for audio analysis and audio-based music information retrieval, is
+another great option due to the extensive amount of audio features it extracts.
+The Essentia library performs an exhaustive analysis, so a script was made to
+filter the output, that is, keeping the information of low level features only.
+The data obtained was later stored on files using the csv format. &lt;/p&gt;
+&lt;h2&gt;Data driven granular synthesis&lt;/h2&gt;
+&lt;p&gt;As windowing techniques used for spectral analysis overlap consecutive analysis
+windows to obtain a more accurate result, so do the most common sound grain
+concatenation techniques to avoid harsh sound ripples or artifacts. In the
+former case, the overlapping would be between grains. This solves a problem
+from the start, as grain overlapping can be matched with the overlapping of
+analysis windows. The size of grains is also an important part of the outcome
+of the resulting sound. After experimenting different window sizes, it could be
+pointed out that using smaller grains for concatenation - again, always fixed
+to the size of the analysis window - would render a more abstract sound.  &lt;/p&gt;
+&lt;p&gt;At this point, a decision was made concerning the sound sources and the desired
+result, that is, not only to bind the sound design process to a sound 
+synthesis technique, but also to aim for a sonification of the information
+obtained. This would lead to the final result, basically sorting sound in a
+microsound level according to values gathered during the analysis. &lt;/p&gt;
+&lt;h1&gt;Conclusion&lt;/h1&gt;
+&lt;h2&gt;Software implementation&lt;/h2&gt;
+&lt;p&gt;If you are a Linux user, you can download the application featured on the video
+above &lt;a href="https://github.com/ioadeer/audioplayer"&gt;here&lt;/a&gt;. In order to use the
+synth, you will have to download a group of audio files and the data set
+obtained from them. The github repo also contains a script which allows you
+create analysis files from wav files.&lt;/p&gt;
+&lt;h2&gt;Acknowledgements&lt;/h2&gt;
+&lt;p&gt;I would like to thank Pablo Riera for helping me develop this application
+and showing me &lt;a href="https://pabloriera.github.io/blog/reorder"&gt;this material&lt;/a&gt; in
+which I based this project.&lt;/p&gt;
+&lt;p&gt;I would also like to thank Hernán Ordiales for setting me on the path of MIR.&lt;/p&gt;</content><category term="corpus-based-synthesis"></category><category term="granularsynthesis"></category><category term="corpusbasedsynthesis"></category><category term="musicinformationretrieval"></category><category term="soundsynthesis"></category><category term="sounddesign"></category></entry></feed>
